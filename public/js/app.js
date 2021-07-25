@@ -1,4 +1,4 @@
-//*********************THIS IS THE CLIENT SIDE OF THE APP */
+//*********************THIS IS THE CLIENT SIDE OF THE APP *************/
 console.log('Client side javascript file is loaded!')
 
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
