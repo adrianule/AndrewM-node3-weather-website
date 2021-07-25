@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title>Weather App</title>
+   <link rel="icon" href="img/logo.png">
+   <link rel="stylesheet" href="/css/style.css">
+   
+</head>
+
+<body>
+   {{!--*****STATIC**** <h1> Weather (the dinamyc HBS file)</h1> --}}
+   {{!-- ***DINAMIC**** --}}
+      {{!-- <h1><center>{{title}}</center></h1> --}}
+      {{!-- <p><center>  Created by {{name}} </center></p> --}}
+    <div class="main-content">
+        {{>header}} 
+      <p> Use this site ti get your weather</p>
+
+         <form>
+           <input placeholder="Location">
+           <button>Search</button>
+         </form>
+    </div>
+    
+
+     <p id="message-One"></p>
+     <p id="message-Two"></p>
+    
+    {{>footer}}
+   
+   <script src="/js/app.js"></script>
+</body>
+
+</html>
