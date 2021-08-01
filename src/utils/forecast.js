@@ -11,9 +11,13 @@ const forecast = (latitude, longitude, callback) => {
        } else if (body.error) {
           callback ('Unable to find location', undefined)
        } else {
-          callback(undefined, body.current.weather_descriptions[0] + '. Temp is ' + body.current.temperature + ' F feels like ' + body.current.feelslike + ' F. There is '+ body.current.precip + '% chances of rain.' )
+          callback(undefined, body.current.weather_descriptions[0] + '. Temp is ' + body.current.temperature + ' F feels like ' + body.current.feelslike + ' F. There is '+ body.current.precip + '% chances of rain.' + 'The Humidity is: ' + body.current.humidity )
        }
     })
  }
 
 module.exports = forecast
+
+
+
+// goal: add new data to forcast
